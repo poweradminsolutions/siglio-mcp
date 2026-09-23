@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.esigndev/siglio-mcp",
+  "description": "MCP server for Siglio. Lets an AI assistant send documents for e-signature by email or text.",
+  "version": "1.0.5",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "siglio-mcp",
+      "version": "1.0.5",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SIGLIO_API_KEY",
+          "description": "Your Siglio API key. Sandbox keys start with sig_sandbox_ and live keys start with sig_live_. Get one at https://esigndev.com",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "SIGLIO_ALLOW_LIVE",
+          "description": "Set to true to allow a live key. Without it, live keys are refused and only sandbox keys will run. Leave unset while testing.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

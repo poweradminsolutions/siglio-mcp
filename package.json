@@ -1,0 +1,35 @@
+{
+  "name": "siglio-mcp",
+  "version": "1.0.5",
+  "mcpName": "com.esigndev/siglio-mcp",
+  "description": "MCP server for Siglio. Lets an AI assistant send documents for e-signature by email or text.",
+  "type": "module",
+  "bin": {
+    "siglio-mcp": "index.js"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "esignature",
+    "siglio",
+    "signature",
+    "pdf"
+  ],
+  "license": "MIT",
+  "homepage": "https://esigndev.com",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}
