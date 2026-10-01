@@ -1,6 +1,6 @@
 {
   "name": "siglio-mcp",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "mcpName": "com.esigndev/siglio-mcp",
   "description": "MCP server for Siglio. Lets an AI assistant send documents for e-signature by email or text.",
   "type": "module",
